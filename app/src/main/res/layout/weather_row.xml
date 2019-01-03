@@ -28,8 +28,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="73dp"
-                android:layout_marginTop="51dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="55dp"
                 android:text="--º"
                 android:textSize="24sp" />
 
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="74dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="20dp"
                 android:text="--º"
                 android:textSize="24sp" />
 
@@ -50,8 +50,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="132dp"
-                android:layout_marginTop="62dp"
+                android:layout_marginStart="131dp"
+                android:layout_marginTop="66dp"
                 android:text="Min" />
 
             <TextView
@@ -60,20 +60,23 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="130dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginStart="129dp"
+                android:layout_marginBottom="58dp"
                 android:text="Max" />
 
             <TextView
                 android:id="@+id/textViewDatePrevision"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/colorOtherAccent"
                 android:text="yyyy-MM-dd"
-                android:textSize="12sp" />
+                android:textAlignment="center"
+                android:textColor="@color/colorOtherWhite"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textViewDescription"
@@ -94,8 +97,8 @@
                 android:layout_height="69dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
                 app:srcCompat="@drawable/min_temp_icon" />
 
             <TextView
@@ -117,8 +120,8 @@
                 android:layout_height="39dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="106dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="93dp"
                 app:srcCompat="@drawable/wind_icon" />
 
             <TextView
@@ -127,18 +130,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="18dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="5dp"
                 android:text="---" />
 
             <TextView
                 android:id="@+id/textViewProbRain"
-                android:layout_width="48dp"
+                android:layout_width="81dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="59dp"
-                android:layout_marginEnd="51dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="5dp"
                 android:text="-- %" />
 
             <ImageView
@@ -147,8 +150,8 @@
                 android:layout_height="26dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="112dp"
-                android:layout_marginBottom="33dp"
+                android:layout_marginEnd="99dp"
+                android:layout_marginBottom="28dp"
                 app:srcCompat="@drawable/water_drop" />
 
 

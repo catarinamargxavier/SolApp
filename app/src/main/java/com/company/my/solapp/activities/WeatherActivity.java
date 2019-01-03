@@ -70,26 +70,30 @@ public class WeatherActivity extends AppCompatActivity {
     public void show() {
         adapter = new MyRecyclerViewAdapter(previsions, WeatherActivity.this);
         recyclerView.setAdapter(adapter);
+        if (previsions.size() > 0) {
+            lastUpdate.setText("Última atualização:  " +
+                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(previsions.get(0).getLastUpdate()));
+        }
     }
 
 
     private void getPrevisions() {
-        int i = 0;
         for (Date date: getDates()) {
-            int finalI = i;
             previsionViewModel.getPrevision(localId,  new SimpleDateFormat("yyyy-MM-dd").format(date)).observe(this, new Observer<Prevision>() {
                 @Override
                 public void onChanged(@Nullable Prevision prevision) {
                     if (prevision !=  null) {
-                        if (previsions.indexOf(prevision) != -1) {
-                            previsions.remove(prevision);
+                        for (Prevision aux: previsions) {
+                            if (aux.getDate().equals(prevision.getDate()) && aux.getIdLocal() == prevision.getIdLocal()) {
+                                previsions.remove(aux);
+                                break;
+                            }
                         }
                         previsions.add(prevision);
                         show();
                     }
                 }
             });
-            i++;
         }
     }
 
