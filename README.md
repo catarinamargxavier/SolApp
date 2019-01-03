@@ -9,18 +9,18 @@ A SolApp é uma aplicação para dispositivos Android que através da API do IPM
 
 ## Arquitetura
 
-	Activity/Fragment
-		|
-		|			
-	ViewModel (com LiveData)
-		|
-		|
-	----Repository---
-	|		|
-	|		|
-Model (com Room)  Remote Data Source (com Retrofit)
-(base de dados	  (webservice)	 
-SQLite)		
+		Activity/Fragment
+			|
+			|			
+		ViewModel (com LiveData)
+			|
+			|
+		----Repository---
+		|		|
+		|		|
+	Model (com Room)  Remote Data Source (com Retrofit)
+	(base de dados	  (webservice)	 
+	SQLite)		
 
 ### Activity/Fragment:
 - MainActivity (escolha do local)
